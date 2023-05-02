@@ -8,9 +8,75 @@
 <body>
 <div class="Container">
     <div class="content">
-        <h1>Ice Cream Shoppe</h1>
+        <h1>Shine-Melted Cream</h1>
+        <form>
+            <div class="row">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" name="first_name" type="text">
+                </div>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" name="last_name" type="text">
+                </div>
+            </div>
+            <div>
+                <h3><bold>Flavor</bold></h3>
+                <div>
+                    <input type="radio" id="vanilla" name="icecream">
+                    <label for="vanilla">Vanilla</label>
+                </div>
+                <div>
+                    <input type="radio" id="strawberry" name="icecream">
+                    <label for="vanilla">Strawberry</label>
+                </div>
+                <div>
+                    <input type="radio" id="chocolate" name="icecream">
+                    <label for="vanilla">Chocolate</label>
+                </div>
+                <h3><bold>Size</bold></h3>
+                <div>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="vanilla">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="vanilla">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="vanilla">Large</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3><bold>Topping</bold></h3>
+                <div>
+                    <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
+                    <label for="Sprinkles">Sprinkles</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="whippedCream" name="whippedCream" value="WhippedCream">
+                    <label for="WhippedCream">Whipped Cream</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caramel" name="caramel" value="caramel">
+                    <label for="caramel">Caramel Sauce</label>
+                </div>
+            </div>
+            <div>
+                <h3>Container</h3>
+                    <label for="container">Please Choose One</label>
+                    <select name="container" id="container">
+                        <option value="cup">Plastic Cup</option>
+                        <option value="sugar">Sugar Cone</option>
+                        <option value="waffle">Waffle Cone</option>
+                        <option value="dippedWaffle">Chocolate Dipped Waffle Cone</option>
+                    </select>
+            </div>
+        </form>
     </div>
 </div>
-
 </body>
 </html>
