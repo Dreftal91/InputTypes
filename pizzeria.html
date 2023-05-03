@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order!</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="Container">
+    <div class="content">
+        <h1>SunShine-Baked Pizza</h1>
+        <form>
+            <fieldset>
+                <div class="row">
+                    <legend>Customer:</legend>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div>
+                <fieldset>
+                    <legend>Delivery?</legend>
+                    <div>
+                        <label for="address">Address</label>
+                        <input id="address" name="address" type="text">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row">
+                <fieldset>
+                    <legend><bold>Pizza Doneness!</bold></legend>
+                    <div>
+                        <input type="radio" id="slightlyundercooked" name="pizzadone">
+                        <label for="slightlyundercooked">Slightly undercooked</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="normal" name="pizzadone">
+                        <label for="normal">Normal</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="slightlyovercooked" name="pizzadone">
+                        <label for="slightlyovercooked">Slightly overcooked</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="veryovercooked" name="pizzadone">
+                        <label for="veryovercooked">Very overcooked</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><bold>Size!</bold></legend>
+                    <div>
+                        <div>
+                            <input type="radio" id="small" name="size">
+                            <label for="small">Small</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="medium" name="size">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="large" name="size">
+                            <label for="large">Large</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend><bold>Toppings!</bold></legend>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni!</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                        <label for="pineapple">Pineapple!</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bacon" name="bacon" value="bacon">
+                        <label for="bacon">Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                        <label for="cheese">Cheese</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="half" name="half" value="half">
+                        <label for="half">Half</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="more" name="more" value="more">
+                        <label for="more">More</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row">
+                <fieldset>
+                    <legend><bold>Sides</bold></legend>
+                    <label for="sides">Please choose one</label>
+                    <select name="sides" id="sides">
+                        <option value="breadsticks">Bread Sticks!</option>
+                        <option value="cookie">Cookies!</option>
+                        <option value="mozzarella">Mozzarella sticks!</option>
+                        <option value="brownies">Brownies!</option>
+                        <option value="chickenwings">Chicken Wings!</option>
+                        <option value="none">None :(</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend><bold>Special Requests</bold></legend>
+                    <label for="specialRequests">Here you can put your special requests!<br>This could be anything.<br>Allergies, special toppings if you pressed more, half, or also special instructions.</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="5" cols="100" placeholder="Allergies, substitutions, etc"></textarea>
+                </fieldset>
+            </div>
+            <button type="button" onclick="alert('Free for our Grand Opening!')">Get Cost</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
